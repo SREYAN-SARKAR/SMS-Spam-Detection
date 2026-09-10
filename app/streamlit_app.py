@@ -1,5 +1,5 @@
 """
-Streamlit UI. Run with: streamlit run app/streamlit_app.py
+Streamlit UI.
 """
 
 import os
@@ -14,9 +14,7 @@ from src.predict import predict_text
 st.set_page_config(page_title="SMS Spam Detector", page_icon="📵")
 st.title("SMS Spam Detection")
 st.write("Enter an SMS message below and the model will classify it as spam or ham.")
-
 user_text = st.text_area("Message", value="", height=150)
-
 if st.button("Predict", type="primary"):
     if not user_text.strip():
         st.warning("Please enter a message first.")
