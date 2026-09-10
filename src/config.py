@@ -1,8 +1,3 @@
-"""
-Central configuration: paths, constants, and the random seed used everywhere
-so results are reproducible.
-"""
-
 import os
 
 # --- Paths -------------------------------------------------------------
